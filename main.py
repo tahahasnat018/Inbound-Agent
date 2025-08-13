@@ -83,7 +83,7 @@ async def voice(request: Request):
     twiml = """
     <Response>
       <Connect>
-        <Stream url="wss://d05499aff4bab.ngrok-free.app/media" />
+        <Stream url="wss://inbound-agent-production.up.railway.app/media" />
       </Connect>
     </Response>
     """
@@ -163,3 +163,4 @@ if __name__ == "__main__":
         port=8000,
         reload=True
     )
+
