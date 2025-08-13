@@ -152,3 +152,14 @@ async def media_ws(websocket: WebSocket):
         except Exception as e:
             print("WebSocket error:", e)
             break
+
+# ---- your whole existing code above ----
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(
+        "app:app",
+        host="0.0.0.0",
+        port=8000,
+        reload=True
+    )
